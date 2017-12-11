@@ -13,6 +13,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
 });
 
 app.get('/api/races', controller.getRaces);
+app.get('/api/races/:id', controller.getRace);
 
 const PORT = 3005;
 app.listen(PORT, console.log(`Server listing on port ${PORT}`));

@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    width: 335px;
+}
+
+.raceLink:link, .raceLink:visited, .raceLink:hover, .raceLink:active {
+    text-decoration: none;
+}
+
+.left, .center, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag {
+    height: 30px;
+    margin-bottom: 6px;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD
+}
+
+.raceAbbrev, .winnerAbbrev {
+    font-weight: 700;
+}
+
+.mfgLogo {
+    width: 30px;
+}
+
+.center {
+    width: 200px;
+}
+
+.circuit {
+    margin: auto;
+    text-align: center;
+}

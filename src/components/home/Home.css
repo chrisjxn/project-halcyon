@@ -1,0 +1,65 @@
+@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
+@import url(//fonts.googleapis.com/earlyaccess/mplus1p.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+
+/* font-family: 'Hannari', serif; */
+/* font-family: 'Mplus 1p', sans-serif; */
+/* font-family: 'Noto Sans Japanese', sans-serif; */
+/* font-family: 'Sawarabi Mincho', serif; */
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Abel', sans-serif; */
+/* font-family: 'Oxygen', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+.homeComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 6px;
+    font-size: 40px;
+}
+
+.jpnWelcome {
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+.deuWelcome {
+    font-family: 'Oswald', sans-serif;
+}
+
+.itaWelcome {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.engWelcome {
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.logo {
+    width: 90px;
+    margin-bottom: 60px;
+}
+
+.racesLink {
+    background: #333333;
+    border-radius: 6px;
+    color: lightskyblue;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.racesLink:link, .racesLink:visited, .racesLink:hover, .racesLink:active {
+    text-decoration: none;
+}

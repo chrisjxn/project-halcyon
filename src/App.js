@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import Race from './components/race/Race';
 import Races from './components/races/Races';
 
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
-          <Races />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/races/:id' component={Race} />
+            <Route path='/races' component={Races} />
+          </Switch>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }

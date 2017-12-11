@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import _ from 'lodash';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getRaces } from '../../redux/mainReducer';
+import RaceListItem from './raceListItem/RaceListItem';
+import './Races.css';
 
 class Races extends Component {
 
@@ -11,30 +12,28 @@ class Races extends Component {
     }
 
     renderRaces() {
-        return _.map(this.props.races, race => {
+        return this.props.races.map(race => {
             return (
-                <li key={race.id}>
-                    <Link to={`/races/${race.id}`}>
-                        {race.race_name}
-                    </Link>
-                </li>
+                <RaceListItem key={race.id} race={race} />
             )
         })
     }
 
     render() {
         return (
-            <div>
-                <h1>This is the Races Component</h1>
-                <ul>
+            <div className="racesComponent">
+                <Link className="homeLink" to='/'>Home</Link>
+                <h1 className="title">2017 MotoGP Season Summary</h1>
+                <div className="raceListContainer">
                     {this.renderRaces()}
-                </ul>
+                </div>
             </div>
         )
     }
 }
 
 function mapStateToProps(state) {
+    console.log(state)
     return {
         races: state.main.races
     }

@@ -1,0 +1,21 @@
+.racesComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeLink {
+    font-size: 20px;
+    margin: 40px 0px;
+}
+
+.homeLink:link, .homeLink:visited, .homeLink:hover, .homeLink:active {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
