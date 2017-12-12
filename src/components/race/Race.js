@@ -35,7 +35,7 @@ class Race extends Component {
                 </div>
                 <div className="raceInfo">
                     <div className="raceName">{race[0].race_name}</div>
-                    <div className="raceNumber">(RACE {race[0].num} of 18)</div>
+                    <div className="raceNumber">(RACE {race[0].num} of {races.length})</div>
                     <img className="fullFlag" src={require(`../../assets/flags/${race[0].abbrev.toLowerCase()}-flag.svg`)} alt="Flag of host country" />
                     <div className="raceCircuit">{race[0].circuit}</div>
                     <img className="circuitImg" src={require(`../../assets/circuits/${race[0].abbrev.toLowerCase()}-circuit.svg`)} alt="Map of circuit" />

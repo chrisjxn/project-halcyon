@@ -13,7 +13,7 @@ const ADD_RACE = 'ADD_RACE';
 
 // action creators
 export function getRaces() {
-    const races = axios.get(`/api/races`).then(res => res)
+    const races = axios.get('/api/races').then(res => res)
     return {
         type: GET_RACES,
         payload: races
@@ -29,7 +29,7 @@ export function getRace(num) {
 }
 
 export function addRace(values, callback) {
-    const newRace = axios.post(`/api/races`, values).then(() => callback());
+    const newRace = axios.post('/api/races', values).then(() => callback());
     return {
         type: ADD_RACE,
         payload: newRace
