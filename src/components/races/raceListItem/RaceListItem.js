@@ -5,7 +5,7 @@ import './RaceListItem.css';
 export default function RaceListItem(props) {
     return (
         <div className="raceListItemComponent">
-            <Link to={`/races/${props.race.id}`} className="raceLink">
+            <Link to={`/races/${props.race.num}`} className="raceLink">
                 <div className="container">
                     <div className="left">
                         <img className="flag" src={require(`../../../assets/flags/${props.race.flag_url}`)} alt="Flag of host country" />

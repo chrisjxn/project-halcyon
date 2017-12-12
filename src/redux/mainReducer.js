@@ -1,12 +1,14 @@
 import axios from 'axios';
 
 const initialState = {
-    races: []
+    races: [],
+    race: []
 }
 
 // action types
 const GET_RACES = 'GET_RACES';
 const GET_RACE = 'GET_RACE';
+const ADD_RACE = 'ADD_RACE';
 
 
 // action creators
@@ -18,11 +20,19 @@ export function getRaces() {
     }
 }
 
-export function getRace(id) {
-    const race = axios.get(`/api/races/${id}`).then(res => res)
+export function getRace(num) {
+    const race = axios.get(`/api/races/${num}`).then(res => res)
     return {
         type: GET_RACE,
         payload: race
+    }
+}
+
+export function addRace(values, callback) {
+    const newRace = axios.post(`/api/races`, values).then(() => callback());
+    return {
+        type: ADD_RACE,
+        payload: newRace
     }
 }
 

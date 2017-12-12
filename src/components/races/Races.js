@@ -14,12 +14,13 @@ class Races extends Component {
     renderRaces() {
         return this.props.races.map(race => {
             return (
-                <RaceListItem key={race.id} race={race} />
+                <RaceListItem key={race.num} race={race} />
             )
         })
     }
 
     render() {
+        console.log(this.props)
         return (
             <div className="racesComponent">
                 <Link className="homeLink" to='/'>Home</Link>
@@ -33,7 +34,6 @@ class Races extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state)
     return {
         races: state.main.races
     }

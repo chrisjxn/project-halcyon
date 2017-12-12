@@ -1,0 +1,77 @@
+.raceComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    width: 335px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.prevRaceLink, 
+.seasonSummaryLink, 
+.nextRaceLink {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 5px 15px;
+}
+
+.prevRaceLink:link, 
+.prevRaceLink:visited, 
+.prevRaceLink:hover, 
+.prevRaceLink:active, 
+.seasonSummaryLink:link, 
+.seasonSummaryLink:visited, 
+.seasonSummaryLink:hover, 
+.seasonSummaryLink:active, 
+.nextRaceLink:link, 
+.nextRaceLink:visited, 
+.nextRaceLink:hover, 
+.nextRaceLink:active {
+    text-decoration: none;
+}
+
+.raceInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 335px;
+    text-align: center;
+}
+
+.raceName, .raceCircuit, .raceWinner, .winnerTeam {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.fullFlag {
+    width: 168px;
+    border: 1px solid lightgray;
+    margin: 20px auto 40px auto;
+    display: block;
+}
+
+.fullMfgLogo {
+    width: 84px;
+    margin: 20px auto 40px auto;
+    display:block;
+}
+
+.circuitImg {
+    width: 335px;
+    margin: 20px auto 40px auto;
+    display: block;
+}
+
+.winnerImg {
+    width: 335px;
+    margin: 20px auto 40px auto;
+    display: block;
+}
+
