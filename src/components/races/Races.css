@@ -3,16 +3,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.homeLink {
-    margin: 40px 0px;
+.navLinks1 {
+    display: flex;
+    width: 335px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+
+.homeLink, 
+.addRaceLink {
     padding: 5px 15px;
     border: 1px solid lightgray;
     border-radius: 6px;
 }
 
-.homeLink:link, .homeLink:visited, .homeLink:hover, .homeLink:active {
+.homeLink {
+    margin-right: 5px;
+}
+
+.addRaceLink {
+    margin-left: 5px;
+}
+
+.homeLink:link, 
+.homeLink:visited, 
+.homeLink:hover, 
+.homeLink:active, 
+.addRaceLink:link, 
+.addRaceLink:visited, 
+.addRaceLink:hover, 
+.addRaceLink:active {
     text-decoration: none;
 }
 

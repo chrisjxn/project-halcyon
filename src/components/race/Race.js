@@ -28,7 +28,7 @@ class Race extends Component {
 
         return (
             <div className="raceComponent">
-                <div className="navLinks">
+                <div className="navLinks2">
                     <Link className="prevRaceLink" to={`/races/${race[0].num === 1 ? races.length : race[0].num - 1}`} >Prev</Link>
                     <Link className="seasonSummaryLink" to='/races'>Summary</Link>
                     <Link className="nextRaceLink" to={`/races/${race[0].num === races.length ? 1 : race[0].num + 1}`} >Next</Link>

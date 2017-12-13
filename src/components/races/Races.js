@@ -20,10 +20,12 @@ class Races extends Component {
     }
 
     render() {
-        console.log(this.props)
         return (
             <div className="racesComponent">
-                <Link className="homeLink" to='/'>Home</Link>
+                <div className="navLinks1">
+                    <Link className="homeLink" to='/'>Home</Link>
+                    <Link className="addRaceLink" to='/races/new'>Add Race</Link>
+                </div>
                 <h1 className="title">2017 MotoGP Season Summary</h1>
                 <div className="raceListContainer">
                     {this.renderRaces()}

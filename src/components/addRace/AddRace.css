@@ -1,0 +1,67 @@
+.formWrapper {
+    margin: 30px 0px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    margin: auto;
+}
+
+label, input, .errorText {
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 6px;
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+}
+
+.errorText {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.errorInput {
+    border: 1px solid red;
+}
+
+label {
+    margin-top: 20px;
+}
+
+.submitAndCancel {
+    width: 335px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+button {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: #444444;
+    font-size: 100%;
+    margin-right: 5px;
+}
+
+.cancelLink {
+    padding: 7px 15px 0px 15px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+.cancelLink:link, 
+.cancelLink:visited, 
+.cancelLink:hover, 
+.cancelLink:active {
+    text-decoration: none;
+}
